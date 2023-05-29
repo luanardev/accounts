@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <Button type="submit" label="Save" size="small" :disabled="form.processing"  />
+    <Button type="submit" label="Save" size="small" severity="secondary" :disabled="form.processing"  />
 
     <div v-if="form.processing">
         <svg aria-hidden="true" class="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
