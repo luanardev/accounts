@@ -29,7 +29,7 @@ Route::middleware('guest')->group(function(){
 
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::get('/apps', [AppsController::class,'index'])->name('apps');
 
